@@ -1,0 +1,603 @@
+/*+-----------------------------------------------------------+
+  |                                                           |
+  |    Template Name: Syrah - Wine Shop Html Template         |
+  |    Author: themesitem                                     |
+  |    Author Email: themesitem.cit@gmail.com                 |
+  |    Version: 1.00                                          |
+  |                                                           |
+  +-----------------------------------------------------------+*/
+
+
+/* CSS Index 
+-----------------------------------
+1. Theme default css
+2. Index Page 
+        |----> Header css
+        |----> Sticky header css
+        |----> Banner Css
+        |----> About Css
+        |----> Product Css
+        |----> Event Css
+        |----> Offer Css
+        |----> Updates Css
+        |----> Footer Css
+        |----> Copyright Css
+3. Our Story Page
+        |----> Inner Page Title css
+        |----> About Part css
+        |----> Achievement Css
+4. Our Product Page
+5. Contact page
+        |----> Left img css
+        |----> Contact-form Css
+6. Error404 Page
+7. Blog-Details
+*/
+
+
+/*===========================
+    1. Theme default css 
+===========================*/
+
+
+/* Google Fonts Css */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&display=swap');
+
+/* Local Fonts Css */
+
+@font-face {
+    font-family: "adinekirnberg";
+    src: url("../fonts/adinekirnberg-script.regular.eot");
+    src: url("../fonts/adinekirnberg-script.regular.eot")format("embedded-opentype"), url("../fonts/adinekirnberg-script.regular.woff2")format("woff2"), url("../fonts/AdineKirnberg-Script.woff")format("woff"), url("../fonts/adinekirnberg-script.regular.ttf") format("truetype"), url("../fonts/AdineKirnberg-Script.svg")format("svg");
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #424242;
+}
+
+.img {
+    max-width: 100%;
+    -webkit-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+    vertical-align: middle;
+}
+
+a:focus,
+input:focus,
+textarea:focus,
+button:focus {
+    text-decoration: none;
+    outline: none;
+}
+
+a:focus,
+a:hover {
+    text-decoration: none;
+}
+
+span,
+a {
+    display: inline-block;
+}
+
+a,
+button {
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    color: #7DC142;
+    font-weight: 500;
+}
+
+h1 {
+    font-weight: 500;
+}
+
+h2 {
+    font-size: 36px;
+}
+
+h3 {
+    font-size: 28px;
+}
+
+h4 {
+    font-size: 22px;
+}
+
+h5 {
+    font-size: 18px;
+}
+
+h6 {
+    font-size: 16px;
+}
+
+ul,
+ol {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+}
+
+p {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    margin-bottom: 15px;
+    color: #424242;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/*== All Button Style ==*/
+
+.theme_btn {}
+
+.theme_btn:hover {}
+
+.bg_cover {
+    background-position: center center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    width: 100%;
+    height: 100%;
+}
+
+
+/*== All section title here ==*/
+
+
+/* one-side-border title */
+
+.section_title {
+    text-align: center;
+}
+
+.section_title h2 {
+    color: black;
+    position: relative;
+}
+
+.section_title span {
+    width: 200px;
+    height: 2px;
+    background: #7DC142;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+}
+
+.section_title .sheap1 {
+    top: 53px;
+}
+
+.section_title .sheap2 {
+    width: 150px;
+    top: 63px;
+}
+
+
+/*===========================
+    Index Page Css Start 
+===========================*/
+
+.subscribe {
+    position: relative;
+}
+
+.subscribe::before {
+    position: absolute;
+    background: rgb(0 0 0 / 47%);
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+}
+
+.subscribe {}
+
+.subscribe .text p {
+    color: #ffffff;
+    padding: 0 102px;
+    font-weight: 700;
+    font-size: 17px;
+}
+
+.subscribe .subscribe_btn {
+    /* text-align: center; */
+    width: 161px;
+    height: 48px;
+    border: 3px solid #fff;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 18px;
+    line-height: 44px;
+    font-weight: 600;
+    margin-left: 100%;
+    transform: translateX(-50%);
+}
+
+
+/*===========================
+    HEADER CSS 
+===========================*/
+
+
+/* manubar */
+
+.navbar {
+    margin: 0;
+    padding: 0;
+    height: 80px;
+}
+
+.navbar .navbar-brand {}
+
+.navbar .navbar-brand img {
+    height: 50px;
+}
+
+.navbar .navbar-collapse {
+    margin-left: 60px;
+}
+
+.navbar .navbar-collapse .navbar-nav {}
+
+.navbar .navbar-collapse .navbar-nav .nav-item {
+    margin-right: 20px;
+    position: relative;
+}
+
+.navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 15px 0;
+}
+
+.navbar .navbar-collapse .navbar-nav .nav-item .nav-link:before {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 3px;
+    background: #7DC142;
+    left: 0;
+    top: 0;
+}
+
+.navbar .navbar-collapse .navbar-nav .nav-item:hover .nav-link:before {
+    width: 100%;
+}
+
+.navbar .navbar-collapse .navbar-nav .nav-item .nav-link.active::before {
+    width: 100%;
+}
+
+
+/* toggle icon */
+
+.navbar .navbar-toggler .icon_bar {
+    width: 30px;
+    height: 2px;
+    display: block;
+    margin: 5px 0;
+}
+
+
+/*===========================
+     STICKY HEADER CSS 
+=============================*/
+
+
+/*
+.header_area.sticky {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 9999999;
+	box-shadow: 0px 0px 191px 0px rgba(0, 0, 0, 0.06);
+
+}
+
+.header_area.sticky .navbar {
+	background: #1D2228;
+	animation: stickyani 8s;
+	-webkit-animation: stickyani 2s;
+	position: absolute;
+	padding-top: 0;
+}
+
+
+@keyframes stickyani {
+	from {
+		transform: translateY(-100%);
+	}
+
+	to {
+		transform: translateY(0);
+	}
+}
+
+*/
+
+
+/*===========================
+    BANNER CSS 
+===========================*/
+
+.banner_area {
+    position: relative;
+    height: 90vh;
+}
+
+.banner_area::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #0000004f;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.banner_area .banner_text {
+    position: absolute;
+    background: #7dc142e0;
+    text-align: center;
+    bottom: -635px;
+    padding: 16px 0;
+    /* width: 97%; */
+    left: 0;
+    right: 0;
+}
+
+.banner_area .banner_text .offer_text {
+    position: relative;
+}
+
+.banner_area .banner_text .offer_text h1 {
+    color: #fff;
+    font-weight: 700;
+    margin-top: 0;
+    position: relative;
+}
+
+.banner_area .banner_text .offer_text p {
+    color: #ffffff;
+    font-size: 19px;
+}
+
+
+/*===========================
+    PRODUCT PART-ONE CSS 
+===========================*/
+
+.bonds {}
+
+.bonds .section_title {
+    text-align: center;
+}
+
+.bonds .section_title h2 {
+    color: black;
+    position: relative;
+}
+
+.bonds .section_title span {
+    width: 200px;
+    height: 2px;
+    background: #7DC142;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+}
+
+.bonds .section_title .sheap1 {
+    top: 53px;
+}
+
+.bonds .section_title .sheap2 {
+    width: 150px;
+    top: 63px;
+}
+
+.bonds .more_info {
+    border: 2px solid #7DC142;
+    padding: 10px 24px;
+    text-transform: uppercase;
+    color: #7DC142;
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+
+/*===========================
+	PRODUCT CSS 
+===========================*/
+
+.news {}
+
+.news .card {
+    border: 0;
+}
+
+.news .card-body {}
+
+.news .card-body h5 {
+    color: #000;
+    font-size: 23px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.news .card-body p {}
+
+.news .card-body .logo {
+    /* display: inline; */
+    float: left;
+    margin-right: 27px;
+}
+
+.news .card-body .text {}
+
+.news .card-body .text p {
+    margin-bottom: 5px;
+    font-size: 17px;
+    color: #7DC142;
+}
+
+.news .card-body .text span {}
+
+
+/*===========================
+    EVENT CSS 
+===========================*/
+
+
+/*===========================
+    OFFER CSS 
+===========================*/
+
+
+/*===========================
+    UPDATES CSS 
+===========================*/
+
+
+/*===========================
+    FOOTER-PART CSS 
+===========================*/
+
+footer {
+    background: #424242;
+}
+
+footer h4 {
+    color: #fff;
+    font-size: 25px;
+    margin-bottom: 25px;
+}
+
+footer ul {}
+
+footer ul li {
+    margin-bottom: 18px;
+}
+
+footer ul li a {
+    color: #fff;
+    font-size: 16px;
+}
+
+footer ul li a i {
+    margin-right: 5px;
+}
+
+footer .logo {
+    margin-bottom: 25px;
+}
+
+footer .logo img {
+    height: 66px;
+}
+
+footer .copy_text {
+    text-align: left;
+    color: #fff;
+}
+
+footer .copy_text p {
+    color: #e8e7e7;
+    margin-top: 45px;
+}
+
+footer .socil_icon {
+    margin-top: 30px;
+    /* margin-left: auto; */
+    float: right;
+}
+
+footer .socil_icon ul {}
+
+footer .socil_icon ul li {
+    display: inline-block;
+    margin: 0;
+    margin-right: 15px;
+}
+
+footer .socil_icon ul li a {
+    background: #7DC142;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    line-height: 55px;
+    text-align: center;
+    font-size: 25px;
+    padding-left: 1px;
+}
+
+footer .socil_icon ul li a i {}
+
+
+/* ========================================================== */
+
+
+/* 			                02. FOOTER                        */
+
+
+/* ========================================================== */
+
+
+/*===========================
+    COPYRIGHT-PART CSS 
+===========================*/
+
+
+/* =========================----- Back-to-top button css -----====================== */
+
+.back_to_top {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    background: #1D2228;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    font-size: 28px;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    transition: all .4s linear;
+    -webkit-transition: all .4s linear;
+    -moz-transition: all .4s linear;
+    -ms-transition: all .4s linear;
+    -o-transition: all .4s linear;
+}
+
+.back_to_top:hover {
+    background: #cf851e;
+    color: #fff;
+}
